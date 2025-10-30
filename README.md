@@ -32,7 +32,7 @@ Unlike traditional finance apps that require bank account linking, continuous in
 - **Analytics and Insights** - Visual charts, spending trends, and budget tracking
 - **Multi-Account Support** - Track multiple bank accounts and credit cards
 - **Privacy First** - All data stored locally, 100% offline, no internet permission
-- **Lightweight** - 22.7MB APK, less than 50MB RAM usage
+- **Lightweight** - 85.9MB APK, less than 50MB RAM usage
 - **Material Design 3** - Modern, beautiful UI with dark mode
 
 ## Installation

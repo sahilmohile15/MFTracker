@@ -22,7 +22,7 @@ MFTracker (My Finance Tracker) is a privacy-focused, offline-first expense track
 HDFC Bank, ICICI Bank, SBI, Axis Bank, Kotak Mahindra, PNB, Bank of Baroda, Canara Bank, IDBI, Yes Bank, IndusInd, IDFC First, Federal Bank, Union Bank, American Express, and more with generic fallback parser.
 
 ⚡ Performance:
-• Lightweight: 22.7MB APK
+• Lightweight: 85.9MB APK
 • Low memory usage: <50MB active, <20MB background
 • Battery efficient: <2% per day
 • Fast app launch: <1.5s

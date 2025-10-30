@@ -77,7 +77,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Batch operations support
 
 ### Performance
-- APK Size: 22.7MB (85.9MB uncompressed)
+
+- APK Size: 85.9MB
 - Memory Usage: <50MB active, <20MB background
 - Battery Impact: <2% per day
 - App Launch Time: <1.5s
