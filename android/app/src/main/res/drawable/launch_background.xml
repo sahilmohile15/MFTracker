@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modify this file to customize your launch splash screen -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color from style guide (Teal) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#00796B" />
+        </shape>
+    </item>
+
+    <!-- MFTracker logo with text -->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/launch_image" />
+    </item>
+</layer-list>

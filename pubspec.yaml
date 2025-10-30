@@ -1,0 +1,125 @@
+name: mftracker
+description: "MFTracker - My Finance Tracker. Smart notification-based expense tracking for India. Track your expenses automatically by reading bank notifications. Privacy-first, offline-first, open-source."
+repository: https://github.com/yourusername/mftracker
+issue_tracker: https://github.com/yourusername/mftracker/issues
+
+publish_to: 'none' # Private package - not published to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management - Latest stable version
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+  
+  # Database
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  
+  # Code Generation
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.9.0
+  
+  # Permissions (for notification access)
+  permission_handler: ^12.0.1
+
+  # Background Work
+  workmanager: ^0.9.0  # Date & Time
+  intl: ^0.20.2
+  
+  # Charts & Data Visualization
+  fl_chart: ^0.70.2
+  
+  # Local Storage
+  shared_preferences: ^2.3.4
+  
+  # Battery Info
+  battery_plus: ^7.0.0
+  
+  # UI
+  cupertino_icons: ^1.0.8
+  flutter_local_notifications: ^19.5.0
+  timezone: ^0.10.1
+  pdf: ^3.11.3
+  printing: ^5.14.2
+  csv: ^6.0.0
+  path_provider: ^2.1.5
+  share_plus: ^12.0.1
+  open_filex: ^4.7.0
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linting
+  flutter_lints: ^6.0.0
+  
+  # Code Generators - Compatible versions
+  build_runner: ^2.4.14
+  freezed: ^3.2.3
+  json_serializable: ^6.11.1
+  # riverpod_generator: ^2.6.4  # Temporarily disabled due to analyzer_plugin compatibility issue
+  # riverpod_lint: ^2.6.4  # Temporarily disabled due to analyzer_plugin compatibility issue
+  
+  # Testing
+  mockito: ^5.5.1
+  integration_test:
+    sdk: flutter
+  
+  # Icon Generation
+  flutter_launcher_icons: ^0.14.1
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/icons/
+    - model/classifier_model.tflite
+    - model/ner_model.tflite
+  #   - assets/data/merchant_mappings.json
+
+  # Fonts (Optional - using default Material fonts for now)
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: fonts/Roboto-Regular.ttf
+  #       - asset: fonts/Roboto-Bold.ttf
+  #         weight: 700
+
+# Flutter Launcher Icons Configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"  # Icon without text for launcher
+  adaptive_icon_background: "#00796B"  # Teal from style guide
+  adaptive_icon_foreground: "assets/icons/app_icon.png"
+  
+  # Platform-specific configurations
+  min_sdk_android: 21
+  
+  # Generate for web
+  web:
+    generate: true
+    image_path: "assets/icons/app_icon.png"
+    background_color: "#00796B"
+    theme_color: "#00796B"
+  
+  # Generate for Windows
+  windows:
+    generate: true
+    image_path: "assets/icons/app_icon.png"
+    icon_size: 48
+  
+  # Generate for macOS
+  macos:
+    generate: true
+    image_path: "assets/icons/app_icon.png"

@@ -1,0 +1,9 @@
+# Build configuration for code generators
+targets:
+  $default:
+    builders:
+      freezed:
+        options:
+          # Generate code with proper formatting
+          union_key: 'runtimeType'
+          union_value_case: none

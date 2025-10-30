@@ -1,0 +1,37 @@
+{
+  "description": "BIO tag label mapping for SMS transaction entity extraction model",
+  "model_file": "model_quant.tflite",
+  "id_to_tag": {
+    "0": "O",
+    "1": "B-MERCHANT",
+    "2": "I-MERCHANT",
+    "3": "B-AMOUNT",
+    "4": "I-AMOUNT",
+    "5": "B-BANK",
+    "6": "I-BANK",
+    "7": "B-PAYMENT_METHOD",
+    "8": "I-PAYMENT_METHOD",
+    "9": "B-TRANSACTION_TYPE",
+    "10": "I-TRANSACTION_TYPE"
+  },
+  "tag_to_id": {
+    "O": 0,
+    "B-MERCHANT": 1,
+    "I-MERCHANT": 2,
+    "B-AMOUNT": 3,
+    "I-AMOUNT": 4,
+    "B-BANK": 5,
+    "I-BANK": 6,
+    "B-PAYMENT_METHOD": 7,
+    "I-PAYMENT_METHOD": 8,
+    "B-TRANSACTION_TYPE": 9,
+    "I-TRANSACTION_TYPE": 10
+  },
+  "entity_types": [
+    "MERCHANT",
+    "AMOUNT",
+    "BANK",
+    "PAYMENT_METHOD",
+    "TRANSACTION_TYPE"
+  ]
+}
