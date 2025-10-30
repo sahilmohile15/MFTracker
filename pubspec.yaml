@@ -1,7 +1,7 @@
 name: mftracker
 description: "MFTracker - My Finance Tracker. Smart notification-based expense tracking for India. Track your expenses automatically by reading bank notifications. Privacy-first, offline-first, open-source."
-repository: https://github.com/yourusername/mftracker
-issue_tracker: https://github.com/yourusername/mftracker/issues
+repository: https://github.com/sahilmohile15/mftracker
+issue_tracker: https://github.com/sahilmohile15/mftracker/issues
 
 publish_to: 'none' # Private package - not published to pub.dev
 

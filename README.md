@@ -59,7 +59,7 @@ Quick Start:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mftracker.git
+git clone https://github.com/sahilmohile15/mftracker.git
 cd mftracker
 
 # Install dependencies
@@ -175,8 +175,8 @@ This project was inspired by the need for a privacy-focused, offline-first expen
 ## Support
 
 - Check the [Documentation](docs/)
-- Report bugs via [GitHub Issues](https://github.com/yourusername/mftracker/issues)
-- Join our [Discussions](https://github.com/yourusername/mftracker/discussions)
+- Report bugs via [GitHub Issues](https://github.com/sahilmohile15/mftracker/issues)
+- Join our [Discussions](https://github.com/sahilmohile15/mftracker/discussions)
 
 **MFTracker - Built with  in India for better financial tracking**
 
