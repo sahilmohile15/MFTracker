@@ -1,0 +1,47 @@
+MFTracker (My Finance Tracker) is a privacy-focused, offline-first expense tracking application that automatically captures your financial transactions from bank notifications.
+
+🔒 Privacy-First Features:
+• 100% offline operation - no internet permission
+• All data stored locally on your device
+• No cloud sync or external data transmission
+• SMS and notification data never leaves your device
+• Only financial SMS/notifications are processed
+• No user accounts or authentication
+• Open source and transparent
+• Privacy-first, always and forever
+
+📊 Smart Expense Tracking:
+• Automatic transaction parsing from 20+ Indian banks
+• Rule-based categorization with 90%+ accuracy
+• Multi-account support (banks, credit cards, wallets, cash)
+• Real-time budget tracking with customizable alerts
+• Comprehensive analytics and insights
+• Spending predictions and trends
+
+🏦 Supported Banks:
+HDFC Bank, ICICI Bank, SBI, Axis Bank, Kotak Mahindra, PNB, Bank of Baroda, Canara Bank, IDBI, Yes Bank, IndusInd, IDFC First, Federal Bank, Union Bank, American Express, and more with generic fallback parser.
+
+⚡ Performance:
+• Lightweight: 22.7MB APK
+• Low memory usage: <50MB active, <20MB background
+• Battery efficient: <2% per day
+• Fast app launch: <1.5s
+
+📱 Features:
+• Transaction Management: Add, edit, delete with tags and notes
+• Budget Management: Set budgets per category with alert thresholds
+• Analytics Dashboard: Visual charts and spending trends
+• Recurring Transaction Detection: Automatic pattern recognition
+• Export: CSV and PDF export functionality
+• Material Design 3: Modern UI with dark mode support
+
+🛡️ Security:
+• SMS and notification data never leaves your device
+• Only financial transactions are processed
+• Optional database encryption
+• No tracking or analytics
+• No advertisements
+
+Built with Flutter for optimal performance and beautiful UI. Perfect for privacy-conscious users who want automatic expense tracking without compromising their financial data security.
+
+F-Droid is the ideal platform for this app as it aligns with our privacy-first philosophy and open-source commitment.

@@ -1,0 +1,3 @@
+MFTracker - My Finance Tracker
+
+Smart notification-based expense tracking for India. Privacy-first, offline-first, open-source.

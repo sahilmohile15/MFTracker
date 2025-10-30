@@ -6,32 +6,33 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Platform](https://img.shields.io/badge/platform-Android-green.svg)
 
-**Smart notification-based expense tracking for India** - Automatically track your monthly expenses by reading transaction notifications from banking apps. No bank account integration needed!
+**Smart notification-based expense tracking for India** - Automatically track your monthly expenses by reading transaction SMS and notifications from banking apps. No bank account integration needed!
 
 [Features](#features)  [Installation](#installation)  [Documentation](#documentation)  [Contributing](#contributing)
 
 ## About
 
-MFTracker (My Finance Tracker) is an open-source mobile app that automatically tracks your monthly expenses by reading transaction notifications from banking apps, UPI services, and payment platforms. It categorizes your spending, provides insights, and helps you manage your budget - all without connecting to your bank account.
+MFTracker (My Finance Tracker) is an open-source mobile app that automatically tracks your monthly expenses by reading transaction SMS and notifications from banking apps, UPI services, and payment platforms. It categorizes your spending, provides insights, and helps you manage your budget - all without connecting to your bank account.
 
 ### Why MFTracker
 
 Unlike traditional finance apps that require bank account linking, continuous internet, and cloud storage, MFTracker:
 
-- Works completely offline (no internet permission)
-- Uses only notification access (no SMS permission needed)
+- 100% offline - no internet permission
+- Reads transaction SMS and notifications locally
 - Stores data locally on your device (SQLite)
-- Zero setup - just install and grant notification permission
+- Zero cloud storage - your data never leaves your phone
+- Privacy-first, always and forever
 - Open source - verify the code yourself
 
 ## Features
 
-- **Automatic Notification Parsing** - Reads transaction notifications from 20+ Indian banks and payment apps
+- **Automatic SMS & Notification Parsing** - Reads transaction SMS and notifications from 20+ Indian banks
 - **Smart Categorization** - Rule-based transaction categorization (Food, Shopping, Bills, etc.)
 - **Analytics and Insights** - Visual charts, spending trends, and budget tracking
 - **Multi-Account Support** - Track multiple bank accounts and credit cards
-- **Privacy First** - All data stored locally, 100% offline, no internet access
-- **Lightweight** - 85.9MB APK, less than 50MB RAM usage
+- **Privacy First** - All data stored locally, 100% offline, no internet permission
+- **Lightweight** - 22.7MB APK, less than 50MB RAM usage
 - **Material Design 3** - Modern, beautiful UI with dark mode
 
 ## Installation
@@ -41,10 +42,10 @@ Unlike traditional finance apps that require bank account linking, continuous in
 1. Download the APK: `build/app/outputs/flutter-apk/app-release.apk`
 2. Disable Play Protect temporarily (required - see note below)
 3. Install the APK on your device
-4. Grant notification permission in Settings
+4. Grant SMS and notification permissions in Settings
 5. Re-enable Play Protect
 
-Note: Google Play Protect will block this app because it uses `NotificationListenerService`. This is expected behavior for sideloaded apps with sensitive permissions. The app is safe - it is open source, 100% offline, and has no internet access.
+Note: Google Play Protect may flag this app because it uses `READ_SMS` and `NotificationListenerService`. This is expected for sideloaded apps with sensitive permissions. The app is safe - it is open source, 100% offline with no internet permission, and all SMS/notification data is processed locally only.
 
 ### For Developers
 

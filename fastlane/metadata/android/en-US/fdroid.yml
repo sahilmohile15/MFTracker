@@ -1,0 +1,80 @@
+Categories: Money
+License: MIT
+WebSite: https://github.com/sahilmohile15/mftracker
+SourceCode: https://github.com/sahilmohile15/mftracker
+IssueTracker: https://github.com/sahilmohile15/mftracker/issues
+Changelog: https://github.com/sahilmohile15/mftracker/releases
+
+AutoName: MFTracker
+Summary: Privacy-first notification-based expense tracker
+
+Description: |-
+    MFTracker (My Finance Tracker) is a privacy-focused, offline-first expense
+    tracking application that automatically captures your financial transactions
+    from bank SMS messages and notifications.
+    
+    Features:
+    * 100% offline operation - no internet permission required
+    * Automatic transaction parsing from bank SMS and notifications
+    * Supports 20+ Indian banks (HDFC, ICICI, SBI, Axis, Kotak, etc.)
+    * Rule-based categorization with 90%+ accuracy
+    * Multi-account support (banks, credit cards, wallets, cash)
+    * Real-time budget tracking with customizable alerts
+    * Comprehensive analytics and insights
+    * CSV/PDF export functionality
+    * Material Design 3 UI with dark mode
+    * No tracking, no ads, no cloud dependencies
+    
+    Privacy & Security:
+    * All data stored locally on device
+    * 100% offline - no internet permission
+    * SMS and notification data never leaves device
+    * Only financial transactions are processed
+    * No user accounts or authentication
+    * Open source and transparent
+    * Privacy-first, always and forever
+    
+    Permissions:
+    * READ_SMS: Read transaction SMS from banks (processed locally only)
+    * RECEIVE_SMS: Receive real-time transaction SMS
+    * POST_NOTIFICATIONS: Read banking app notifications
+    * NO internet permission - completely offline
+    
+    Supported Banks: HDFC, ICICI, SBI, Axis, Kotak, PNB, BOB, Canara, IDBI,
+    Yes Bank, IndusInd, IDFC First, Federal, Union, American Express, and more.
+
+RepoType: git
+Repo: https://github.com/sahilmohile15/mftracker.git
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: v1.0.0
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@stable
+    rm:
+      - ios
+      - linux
+      - macos
+      - windows
+      - web
+    prebuild:
+      - export PATH=$PATH:$$flutter$$/bin
+      - flutter packages get
+      - flutter pub run build_runner build --delete-conflicting-outputs
+    build:
+      - export PATH=$PATH:$$flutter$$/bin
+      - flutter build apk --release
+
+MaintainerNotes: |-
+    App is built with Flutter. Requires Flutter SDK stable channel.
+    Code generation (Freezed) must be run before build.
+    
+    The app uses NotificationListenerService to read bank transaction
+    notifications. All processing is done locally on device.
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
